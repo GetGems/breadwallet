@@ -67,6 +67,58 @@
 		75D5F3F1191EC270004AB296 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75D5F3EF191EC270004AB296 /* InfoPlist.strings */; };
 		75D5F3F3191EC270004AB296 /* BreadWalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D5F3F2191EC270004AB296 /* BreadWalletTests.m */; };
 		84F68C8A1975E9E2002FC300 /* BRScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F68C891975E9E2002FC300 /* BRScanViewController.m */; };
+		E13695CF1ACC023700C405FC /* BRAddressEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E289F19234AE300DB5A3C /* BRAddressEntity.m */; };
+		E13695D01ACC023700C405FC /* BRMerkleBlockEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28A119234AE300DB5A3C /* BRMerkleBlockEntity.m */; };
+		E13695D11ACC023700C405FC /* BRPeerEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28A319234AE300DB5A3C /* BRPeerEntity.m */; };
+		E13695D21ACC023700C405FC /* BRTransactionEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28A519234AE300DB5A3C /* BRTransactionEntity.m */; };
+		E13695D31ACC023700C405FC /* BRTxInputEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28A719234AE300DB5A3C /* BRTxInputEntity.m */; };
+		E13695D41ACC023700C405FC /* BRTxOutputEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28A919234AE300DB5A3C /* BRTxOutputEntity.m */; };
+		E13695D51ACC023700C405FC /* BRKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28B719234C3600DB5A3C /* BRKey.m */; };
+		E13695D61ACC023700C405FC /* BRKey+BIP38.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28B919234C3600DB5A3C /* BRKey+BIP38.m */; };
+		E13695D71ACC023700C405FC /* BRTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28C919234C3600DB5A3C /* BRTransaction.m */; };
+		E13695D81ACC023700C405FC /* BRBIP32Sequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28B119234C3600DB5A3C /* BRBIP32Sequence.m */; };
+		E13695D91ACC023700C405FC /* BRBIP39Mnemonic.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28B319234C3600DB5A3C /* BRBIP39Mnemonic.m */; };
+		E13695DA1ACC023700C405FC /* BRWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28CB19234C3600DB5A3C /* BRWallet.m */; };
+		E13695DB1ACC023700C405FC /* BRWalletManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28CD19234C3600DB5A3C /* BRWalletManager.m */; };
+		E13695DC1ACC023700C405FC /* BRMerkleBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28BC19234C3600DB5A3C /* BRMerkleBlock.m */; };
+		E13695DD1ACC023700C405FC /* BRBloomFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28B519234C3600DB5A3C /* BRBloomFilter.m */; };
+		E13695DE1ACC023700C405FC /* BRPeer.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28C319234C3600DB5A3C /* BRPeer.m */; };
+		E13695DF1ACC023700C405FC /* BRPeerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28C719234C3600DB5A3C /* BRPeerManager.m */; };
+		E13695E01ACC023700C405FC /* BRPaymentProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28BF19234C3600DB5A3C /* BRPaymentProtocol.m */; };
+		E13695E11ACC023700C405FC /* BRPaymentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28C119234C3600DB5A3C /* BRPaymentRequest.m */; };
+		E13695E21ACC024300C405FC /* NSString+Bitcoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28E619234DA200DB5A3C /* NSString+Bitcoin.m */; };
+		E13695E31ACC024300C405FC /* NSData+Bitcoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28DE19234DA200DB5A3C /* NSData+Bitcoin.m */; };
+		E13695E41ACC024300C405FC /* NSMutableData+Bitcoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28E419234DA200DB5A3C /* NSMutableData+Bitcoin.m */; };
+		E13695E51ACC024300C405FC /* NSManagedObject+Sugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28E219234DA200DB5A3C /* NSManagedObject+Sugar.m */; };
+		E13695E61ACC024300C405FC /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = 75767C411A0EC6F9003E7DE9 /* UIImage+Blur.m */; };
+		E13695E71ACC024D00C405FC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28F019234E8100DB5A3C /* Reachability.m */; };
+		E13695E81ACC025900C405FC /* BRAddressEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E289E19234AE300DB5A3C /* BRAddressEntity.h */; };
+		E13695E91ACC025900C405FC /* BRMerkleBlockEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28A019234AE300DB5A3C /* BRMerkleBlockEntity.h */; };
+		E13695EA1ACC025900C405FC /* BRPeerEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28A219234AE300DB5A3C /* BRPeerEntity.h */; };
+		E13695EB1ACC025900C405FC /* BRTransactionEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28A419234AE300DB5A3C /* BRTransactionEntity.h */; };
+		E13695EC1ACC025900C405FC /* BRTxInputEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28A619234AE300DB5A3C /* BRTxInputEntity.h */; };
+		E13695ED1ACC025900C405FC /* BRTxOutputEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28A819234AE300DB5A3C /* BRTxOutputEntity.h */; };
+		E13695EE1ACC025900C405FC /* BRKey.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28B619234C3600DB5A3C /* BRKey.h */; };
+		E13695EF1ACC025900C405FC /* BRKey+BIP38.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28B819234C3600DB5A3C /* BRKey+BIP38.h */; };
+		E13695F01ACC025900C405FC /* BRTransaction.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28C819234C3600DB5A3C /* BRTransaction.h */; };
+		E13695F11ACC025900C405FC /* BRKeySequence.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28BA19234C3600DB5A3C /* BRKeySequence.h */; };
+		E13695F21ACC025900C405FC /* BRBIP32Sequence.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28DC19234D1000DB5A3C /* BRBIP32Sequence.h */; };
+		E13695F31ACC025900C405FC /* BRMnemonic.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28BD19234C3600DB5A3C /* BRMnemonic.h */; };
+		E13695F41ACC025900C405FC /* BRBIP39Mnemonic.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28B219234C3600DB5A3C /* BRBIP39Mnemonic.h */; };
+		E13695F51ACC025900C405FC /* BRWallet.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28CA19234C3600DB5A3C /* BRWallet.h */; };
+		E13695F61ACC025900C405FC /* BRWalletManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28CC19234C3600DB5A3C /* BRWalletManager.h */; };
+		E13695F71ACC025900C405FC /* BRMerkleBlock.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28BB19234C3600DB5A3C /* BRMerkleBlock.h */; };
+		E13695F81ACC025900C405FC /* BRBloomFilter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28B419234C3600DB5A3C /* BRBloomFilter.h */; };
+		E13695F91ACC025900C405FC /* BRPeer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28C219234C3600DB5A3C /* BRPeer.h */; };
+		E13695FA1ACC025900C405FC /* BRPeerManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28C619234C3600DB5A3C /* BRPeerManager.h */; };
+		E13695FB1ACC025900C405FC /* BRPaymentProtocol.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28BE19234C3600DB5A3C /* BRPaymentProtocol.h */; };
+		E13695FC1ACC025900C405FC /* BRPaymentRequest.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28C019234C3600DB5A3C /* BRPaymentRequest.h */; };
+		E13695FD1ACC026500C405FC /* NSString+Bitcoin.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28E519234DA200DB5A3C /* NSString+Bitcoin.h */; };
+		E13695FE1ACC026500C405FC /* NSData+Bitcoin.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28DD19234DA200DB5A3C /* NSData+Bitcoin.h */; };
+		E13695FF1ACC026500C405FC /* NSMutableData+Bitcoin.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28E319234DA200DB5A3C /* NSMutableData+Bitcoin.h */; };
+		E13696001ACC026500C405FC /* NSManagedObject+Sugar.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28E119234DA200DB5A3C /* NSManagedObject+Sugar.h */; };
+		E13696011ACC026500C405FC /* UIImage+Blur.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75767C401A0EC6F9003E7DE9 /* UIImage+Blur.h */; };
+		E13696021ACC026D00C405FC /* Reachability.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28EF19234E8100DB5A3C /* Reachability.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +143,13 @@
 			remoteGlobalIDString = 75D5F3BD191EC270004AB296;
 			remoteInfo = BreadWallet;
 		};
+		E13695CD1ACC021A00C405FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D5F3B6191EC270004AB296 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 759F2C271AABE4620029A5AB;
+			remoteInfo = secp256k1;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -100,6 +159,42 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E13695B21ACC020700C405FC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				E13696021ACC026D00C405FC /* Reachability.h in CopyFiles */,
+				E13695FD1ACC026500C405FC /* NSString+Bitcoin.h in CopyFiles */,
+				E13695FE1ACC026500C405FC /* NSData+Bitcoin.h in CopyFiles */,
+				E13695FF1ACC026500C405FC /* NSMutableData+Bitcoin.h in CopyFiles */,
+				E13696001ACC026500C405FC /* NSManagedObject+Sugar.h in CopyFiles */,
+				E13696011ACC026500C405FC /* UIImage+Blur.h in CopyFiles */,
+				E13695E81ACC025900C405FC /* BRAddressEntity.h in CopyFiles */,
+				E13695E91ACC025900C405FC /* BRMerkleBlockEntity.h in CopyFiles */,
+				E13695EA1ACC025900C405FC /* BRPeerEntity.h in CopyFiles */,
+				E13695EB1ACC025900C405FC /* BRTransactionEntity.h in CopyFiles */,
+				E13695EC1ACC025900C405FC /* BRTxInputEntity.h in CopyFiles */,
+				E13695ED1ACC025900C405FC /* BRTxOutputEntity.h in CopyFiles */,
+				E13695EE1ACC025900C405FC /* BRKey.h in CopyFiles */,
+				E13695EF1ACC025900C405FC /* BRKey+BIP38.h in CopyFiles */,
+				E13695F01ACC025900C405FC /* BRTransaction.h in CopyFiles */,
+				E13695F11ACC025900C405FC /* BRKeySequence.h in CopyFiles */,
+				E13695F21ACC025900C405FC /* BRBIP32Sequence.h in CopyFiles */,
+				E13695F31ACC025900C405FC /* BRMnemonic.h in CopyFiles */,
+				E13695F41ACC025900C405FC /* BRBIP39Mnemonic.h in CopyFiles */,
+				E13695F51ACC025900C405FC /* BRWallet.h in CopyFiles */,
+				E13695F61ACC025900C405FC /* BRWalletManager.h in CopyFiles */,
+				E13695F71ACC025900C405FC /* BRMerkleBlock.h in CopyFiles */,
+				E13695F81ACC025900C405FC /* BRBloomFilter.h in CopyFiles */,
+				E13695F91ACC025900C405FC /* BRPeer.h in CopyFiles */,
+				E13695FA1ACC025900C405FC /* BRPeerManager.h in CopyFiles */,
+				E13695FB1ACC025900C405FC /* BRPaymentProtocol.h in CopyFiles */,
+				E13695FC1ACC025900C405FC /* BRPaymentRequest.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +336,8 @@
 		75F27B0619DE2AB20047FC62 /* ccMemory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ccMemory.h; sourceTree = SOURCE_ROOT; };
 		84F68C881975E9E2002FC300 /* BRScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRScanViewController.h; sourceTree = "<group>"; };
 		84F68C891975E9E2002FC300 /* BRScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRScanViewController.m; sourceTree = "<group>"; };
+		E13695B41ACC020700C405FC /* libbreadwalletiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libbreadwalletiOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E13695C41ACC020700C405FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +367,13 @@
 				75D5F3E7191EC270004AB296 /* XCTest.framework in Frameworks */,
 				75D5F3E9191EC270004AB296 /* UIKit.framework in Frameworks */,
 				75D5F3E8191EC270004AB296 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E13695B11ACC020700C405FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +561,8 @@
 			children = (
 				75D5F3C7191EC270004AB296 /* BreadWallet */,
 				75D5F3EC191EC270004AB296 /* BreadWalletTests */,
+				E13695B51ACC020700C405FC /* breadwalletiOS */,
+				E13695C21ACC020700C405FC /* breadwalletiOSTests */,
 				75D5F3C0191EC270004AB296 /* Frameworks */,
 				75D5F3BF191EC270004AB296 /* Products */,
 			);
@@ -468,6 +574,7 @@
 				75D5F3BE191EC270004AB296 /* breadwallet.app */,
 				75D5F3E5191EC270004AB296 /* BreadWalletTests.xctest */,
 				759F2C281AABE4620029A5AB /* libsecp256k1.a */,
+				E13695B41ACC020700C405FC /* libbreadwalletiOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -531,6 +638,29 @@
 			children = (
 				75D5F3EE191EC270004AB296 /* BreadWalletTests-Info.plist */,
 				75D5F3EF191EC270004AB296 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E13695B51ACC020700C405FC /* breadwalletiOS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = breadwalletiOS;
+			sourceTree = "<group>";
+		};
+		E13695C21ACC020700C405FC /* breadwalletiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				E13695C31ACC020700C405FC /* Supporting Files */,
+			);
+			path = breadwalletiOSTests;
+			sourceTree = "<group>";
+		};
+		E13695C31ACC020700C405FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E13695C41ACC020700C405FC /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -609,6 +739,24 @@
 			productReference = 75D5F3E5191EC270004AB296 /* BreadWalletTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E13695B31ACC020700C405FC /* breadwalletiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E13695CB1ACC020700C405FC /* Build configuration list for PBXNativeTarget "breadwalletiOS" */;
+			buildPhases = (
+				E13695B01ACC020700C405FC /* Sources */,
+				E13695B11ACC020700C405FC /* Frameworks */,
+				E13695B21ACC020700C405FC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E13695CE1ACC021A00C405FC /* PBXTargetDependency */,
+			);
+			name = breadwalletiOS;
+			productName = breadwalletiOS;
+			productReference = E13695B41ACC020700C405FC /* libbreadwalletiOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -639,6 +787,9 @@
 					75D5F3E4191EC270004AB296 = {
 						TestTargetID = 75D5F3BD191EC270004AB296;
 					};
+					E13695B31ACC020700C405FC = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
 				};
 			};
 			buildConfigurationList = 75D5F3B9191EC270004AB296 /* Build configuration list for PBXProject "BreadWallet" */;
@@ -658,6 +809,7 @@
 				759F2C271AABE4620029A5AB /* secp256k1 */,
 				75D5F3E4191EC270004AB296 /* BreadWalletTests */,
 				75001D3D1A1EE89500585F55 /* submodules */,
+				E13695B31ACC020700C405FC /* breadwalletiOS */,
 			);
 		};
 /* End PBXProject section */
@@ -753,6 +905,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E13695B01ACC020700C405FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E13695E71ACC024D00C405FC /* Reachability.m in Sources */,
+				E13695E21ACC024300C405FC /* NSString+Bitcoin.m in Sources */,
+				E13695E31ACC024300C405FC /* NSData+Bitcoin.m in Sources */,
+				E13695E41ACC024300C405FC /* NSMutableData+Bitcoin.m in Sources */,
+				E13695E51ACC024300C405FC /* NSManagedObject+Sugar.m in Sources */,
+				E13695E61ACC024300C405FC /* UIImage+Blur.m in Sources */,
+				E13695CF1ACC023700C405FC /* BRAddressEntity.m in Sources */,
+				E13695D01ACC023700C405FC /* BRMerkleBlockEntity.m in Sources */,
+				E13695D11ACC023700C405FC /* BRPeerEntity.m in Sources */,
+				E13695D21ACC023700C405FC /* BRTransactionEntity.m in Sources */,
+				E13695D31ACC023700C405FC /* BRTxInputEntity.m in Sources */,
+				E13695D41ACC023700C405FC /* BRTxOutputEntity.m in Sources */,
+				E13695D51ACC023700C405FC /* BRKey.m in Sources */,
+				E13695D61ACC023700C405FC /* BRKey+BIP38.m in Sources */,
+				E13695D71ACC023700C405FC /* BRTransaction.m in Sources */,
+				E13695D81ACC023700C405FC /* BRBIP32Sequence.m in Sources */,
+				E13695D91ACC023700C405FC /* BRBIP39Mnemonic.m in Sources */,
+				E13695DA1ACC023700C405FC /* BRWallet.m in Sources */,
+				E13695DB1ACC023700C405FC /* BRWalletManager.m in Sources */,
+				E13695DC1ACC023700C405FC /* BRMerkleBlock.m in Sources */,
+				E13695DD1ACC023700C405FC /* BRBloomFilter.m in Sources */,
+				E13695DE1ACC023700C405FC /* BRPeer.m in Sources */,
+				E13695DF1ACC023700C405FC /* BRPeerManager.m in Sources */,
+				E13695E01ACC023700C405FC /* BRPaymentProtocol.m in Sources */,
+				E13695E11ACC023700C405FC /* BRPaymentRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -770,6 +954,11 @@
 			isa = PBXTargetDependency;
 			target = 75D5F3BD191EC270004AB296 /* breadwallet */;
 			targetProxy = 75D5F3EA191EC270004AB296 /* PBXContainerItemProxy */;
+		};
+		E13695CE1ACC021A00C405FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 759F2C271AABE4620029A5AB /* secp256k1 */;
+			targetProxy = E13695CD1ACC021A00C405FC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1139,6 +1328,49 @@
 			};
 			name = Release;
 		};
+		E13695C51ACC020700C405FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E13695C61ACC020700C405FC /* GCov_Build */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = GCov_Build;
+		};
+		E13695C71ACC020700C405FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1191,6 +1423,15 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		E13695CB1ACC020700C405FC /* Build configuration list for PBXNativeTarget "breadwalletiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E13695C51ACC020700C405FC /* Debug */,
+				E13695C61ACC020700C405FC /* GCov_Build */,
+				E13695C71ACC020700C405FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
