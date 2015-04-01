@@ -24,6 +24,7 @@
 //  THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "BRPeer.h"
 
 #define BRPeerManagerSyncStartedNotification  @"BRPeerManagerSyncStartedNotification"

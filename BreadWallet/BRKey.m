@@ -28,6 +28,8 @@
 #import "NSData+Bitcoin.h"
 #import "NSMutableData+Bitcoin.h"
 
+
+#import "BreadWalletCommons.h"
 #import <secp256k1/include/secp256k1.h>
 #import <secp256k1/src/util.h>
 #import <secp256k1/src/scalar_impl.h>

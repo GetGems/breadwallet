@@ -35,6 +35,7 @@
 #import "NSMutableData+Bitcoin.h"
 #import "NSManagedObject+Sugar.h"
 #import "Reachability.h"
+#import "BreadWalletCommons.h"
 #import <LocalAuthentication/LocalAuthentication.h>
 
 #define CIRCLE @"\xE2\x97\x8C" // dotted circle (utf-8)
