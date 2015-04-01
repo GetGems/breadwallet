@@ -73,7 +73,7 @@
 		E13695D21ACC023700C405FC /* BRTransactionEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28A519234AE300DB5A3C /* BRTransactionEntity.m */; };
 		E13695D31ACC023700C405FC /* BRTxInputEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28A719234AE300DB5A3C /* BRTxInputEntity.m */; };
 		E13695D41ACC023700C405FC /* BRTxOutputEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28A919234AE300DB5A3C /* BRTxOutputEntity.m */; };
-		E13695D51ACC023700C405FC /* BRKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28B719234C3600DB5A3C /* BRKey.m */; };
+		E13695D51ACC023700C405FC /* BRKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28B719234C3600DB5A3C /* BRKey.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		E13695D61ACC023700C405FC /* BRKey+BIP38.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28B919234C3600DB5A3C /* BRKey+BIP38.m */; };
 		E13695D71ACC023700C405FC /* BRTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28C919234C3600DB5A3C /* BRTransaction.m */; };
 		E13695D81ACC023700C405FC /* BRBIP32Sequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28B119234C3600DB5A3C /* BRBIP32Sequence.m */; };
@@ -124,6 +124,9 @@
 		E13696051ACC02B000C405FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D5F3C5191EC270004AB296 /* UIKit.framework */; };
 		E15109B21ACC19AF0026AC3A /* BRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D5F3D1191EC270004AB296 /* BRAppDelegate.m */; };
 		E15109B31ACC19BB0026AC3A /* BRAppDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75D5F3D0191EC270004AB296 /* BRAppDelegate.h */; };
+		E1510A2A1ACC286E0026AC3A /* ccMemory.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75F27B0619DE2AB20047FC62 /* ccMemory.h */; };
+		E1510A391ACC2DA90026AC3A /* secp256k1.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 758B16241AA9ADC4002C65DD /* secp256k1.h */; };
+		E1510A3A1ACC2E310026AC3A /* libsecp256k1-config.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 759F2C221AAAD42D0029A5AB /* libsecp256k1-config.h */; };
 		E19A17661ACC0E3900B2294E /* BreadWallet.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 752E2898192349CE00DB5A3C /* BreadWallet.xcdatamodeld */; };
 		E19A17671ACC0E3900B2294E /* BIP39EnglishWords.plist in Resources */ = {isa = PBXBuildFile; fileRef = 752E28F419235B3000DB5A3C /* BIP39EnglishWords.plist */; };
 		E19A17681ACC0E3900B2294E /* FixedPeers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 752E28F519235B3000DB5A3C /* FixedPeers.plist */; };
@@ -176,6 +179,9 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				E1510A3A1ACC2E310026AC3A /* libsecp256k1-config.h in CopyFiles */,
+				E1510A391ACC2DA90026AC3A /* secp256k1.h in CopyFiles */,
+				E1510A2A1ACC286E0026AC3A /* ccMemory.h in CopyFiles */,
 				E15109B31ACC19BB0026AC3A /* BRAppDelegate.h in CopyFiles */,
 				E13696021ACC026D00C405FC /* Reachability.h in CopyFiles */,
 				E13695FD1ACC026500C405FC /* NSString+Bitcoin.h in CopyFiles */,
@@ -1432,14 +1438,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lgmp",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "arm64 armv7 armv7s i386";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -1463,14 +1469,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lgmp",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "arm64 armv7 armv7s i386";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = GCov_Build;
 		};
@@ -1494,14 +1500,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lgmp",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "arm64 armv7 armv7s i386";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
