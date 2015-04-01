@@ -122,6 +122,9 @@
 		E13696031ACC02A900C405FC /* libsecp256k1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 759F2C281AABE4620029A5AB /* libsecp256k1.a */; };
 		E13696041ACC02AD00C405FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D5F3C1191EC270004AB296 /* Foundation.framework */; };
 		E13696051ACC02B000C405FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D5F3C5191EC270004AB296 /* UIKit.framework */; };
+		E19A17661ACC0E3900B2294E /* BreadWallet.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 752E2898192349CE00DB5A3C /* BreadWallet.xcdatamodeld */; };
+		E19A17671ACC0E3900B2294E /* BIP39EnglishWords.plist in Resources */ = {isa = PBXBuildFile; fileRef = 752E28F419235B3000DB5A3C /* BIP39EnglishWords.plist */; };
+		E19A17681ACC0E3900B2294E /* FixedPeers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 752E28F519235B3000DB5A3C /* FixedPeers.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -342,6 +345,8 @@
 		E13695B41ACC020700C405FC /* libbreadwalletiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libbreadwalletiOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E13695C41ACC020700C405FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E19A17591ACC0D2800B2294E /* BreadWalletCommons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BreadWalletCommons.h; sourceTree = SOURCE_ROOT; };
+		E19A175E1ACC0E2C00B2294E /* BreadWalletiOSBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreadWalletiOSBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E19A17611ACC0E2C00B2294E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -381,6 +386,13 @@
 				E13696051ACC02B000C405FC /* UIKit.framework in Frameworks */,
 				E13696041ACC02AD00C405FC /* Foundation.framework in Frameworks */,
 				E13696031ACC02A900C405FC /* libsecp256k1.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E19A175B1ACC0E2C00B2294E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,6 +582,7 @@
 				75D5F3EC191EC270004AB296 /* BreadWalletTests */,
 				E13695B51ACC020700C405FC /* breadwalletiOS */,
 				E13695C21ACC020700C405FC /* breadwalletiOSTests */,
+				E19A175F1ACC0E2C00B2294E /* BreadWalletiOSBundle */,
 				75D5F3C0191EC270004AB296 /* Frameworks */,
 				75D5F3BF191EC270004AB296 /* Products */,
 			);
@@ -582,6 +595,7 @@
 				75D5F3E5191EC270004AB296 /* BreadWalletTests.xctest */,
 				759F2C281AABE4620029A5AB /* libsecp256k1.a */,
 				E13695B41ACC020700C405FC /* libbreadwalletiOS.a */,
+				E19A175E1ACC0E2C00B2294E /* BreadWalletiOSBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -669,6 +683,22 @@
 			isa = PBXGroup;
 			children = (
 				E13695C41ACC020700C405FC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E19A175F1ACC0E2C00B2294E /* BreadWalletiOSBundle */ = {
+			isa = PBXGroup;
+			children = (
+				E19A17601ACC0E2C00B2294E /* Supporting Files */,
+			);
+			path = BreadWalletiOSBundle;
+			sourceTree = "<group>";
+		};
+		E19A17601ACC0E2C00B2294E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E19A17611ACC0E2C00B2294E /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -765,6 +795,23 @@
 			productReference = E13695B41ACC020700C405FC /* libbreadwalletiOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		E19A175D1ACC0E2C00B2294E /* BreadWalletiOSBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E19A17621ACC0E2C00B2294E /* Build configuration list for PBXNativeTarget "BreadWalletiOSBundle" */;
+			buildPhases = (
+				E19A175A1ACC0E2C00B2294E /* Sources */,
+				E19A175B1ACC0E2C00B2294E /* Frameworks */,
+				E19A175C1ACC0E2C00B2294E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BreadWalletiOSBundle;
+			productName = BreadWalletiOSBundle;
+			productReference = E19A175E1ACC0E2C00B2294E /* BreadWalletiOSBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -798,6 +845,9 @@
 					E13695B31ACC020700C405FC = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
+					E19A175D1ACC0E2C00B2294E = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
 				};
 			};
 			buildConfigurationList = 75D5F3B9191EC270004AB296 /* Build configuration list for PBXProject "BreadWallet" */;
@@ -818,6 +868,7 @@
 				75D5F3E4191EC270004AB296 /* BreadWalletTests */,
 				75001D3D1A1EE89500585F55 /* submodules */,
 				E13695B31ACC020700C405FC /* breadwalletiOS */,
+				E19A175D1ACC0E2C00B2294E /* BreadWalletiOSBundle */,
 			);
 		};
 /* End PBXProject section */
@@ -841,6 +892,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				75D5F3F1191EC270004AB296 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E19A175C1ACC0E2C00B2294E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E19A17661ACC0E3900B2294E /* BreadWallet.xcdatamodeld in Resources */,
+				E19A17671ACC0E3900B2294E /* BIP39EnglishWords.plist in Resources */,
+				E19A17681ACC0E3900B2294E /* FixedPeers.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -942,6 +1003,13 @@
 				E13695DF1ACC023700C405FC /* BRPeerManager.m in Sources */,
 				E13695E01ACC023700C405FC /* BRPaymentProtocol.m in Sources */,
 				E13695E11ACC023700C405FC /* BRPaymentRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E19A175A1ACC0E2C00B2294E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1427,6 +1495,66 @@
 			};
 			name = Release;
 		};
+		E19A17631ACC0E2C00B2294E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BreadWalletiOSBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E19A17641ACC0E2C00B2294E /* GCov_Build */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = BreadWalletiOSBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = GCov_Build;
+		};
+		E19A17651ACC0E2C00B2294E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = BreadWalletiOSBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1489,6 +1617,15 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		E19A17621ACC0E2C00B2294E /* Build configuration list for PBXNativeTarget "BreadWalletiOSBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E19A17631ACC0E2C00B2294E /* Debug */,
+				E19A17641ACC0E2C00B2294E /* GCov_Build */,
+				E19A17651ACC0E2C00B2294E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
