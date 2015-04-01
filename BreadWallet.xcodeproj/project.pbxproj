@@ -119,6 +119,10 @@
 		E13696001ACC026500C405FC /* NSManagedObject+Sugar.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28E119234DA200DB5A3C /* NSManagedObject+Sugar.h */; };
 		E13696011ACC026500C405FC /* UIImage+Blur.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75767C401A0EC6F9003E7DE9 /* UIImage+Blur.h */; };
 		E13696021ACC026D00C405FC /* Reachability.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 752E28EF19234E8100DB5A3C /* Reachability.h */; };
+		E13696031ACC02A900C405FC /* libsecp256k1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 759F2C281AABE4620029A5AB /* libsecp256k1.a */; };
+		E13696041ACC02AD00C405FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D5F3C1191EC270004AB296 /* Foundation.framework */; };
+		E13696051ACC02B000C405FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D5F3C5191EC270004AB296 /* UIKit.framework */; };
+		E13696071ACC02D000C405FC /* BreadWalletCommons.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E13696061ACC02C200C405FC /* BreadWalletCommons.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +172,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				E13696071ACC02D000C405FC /* BreadWalletCommons.h in CopyFiles */,
 				E13696021ACC026D00C405FC /* Reachability.h in CopyFiles */,
 				E13695FD1ACC026500C405FC /* NSString+Bitcoin.h in CopyFiles */,
 				E13695FE1ACC026500C405FC /* NSData+Bitcoin.h in CopyFiles */,
@@ -338,6 +343,7 @@
 		84F68C891975E9E2002FC300 /* BRScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRScanViewController.m; sourceTree = "<group>"; };
 		E13695B41ACC020700C405FC /* libbreadwalletiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libbreadwalletiOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E13695C41ACC020700C405FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E13696061ACC02C200C405FC /* BreadWalletCommons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BreadWalletCommons.h; path = ../../../BreadWalletCommons.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,6 +380,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E13696051ACC02B000C405FC /* UIKit.framework in Frameworks */,
+				E13696041ACC02AD00C405FC /* Foundation.framework in Frameworks */,
+				E13696031ACC02A900C405FC /* libsecp256k1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,6 +654,7 @@
 		E13695B51ACC020700C405FC /* breadwalletiOS */ = {
 			isa = PBXGroup;
 			children = (
+				E13696061ACC02C200C405FC /* BreadWalletCommons.h */,
 			);
 			path = breadwalletiOS;
 			sourceTree = "<group>";
