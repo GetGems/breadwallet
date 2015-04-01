@@ -122,6 +122,8 @@
 		E13696031ACC02A900C405FC /* libsecp256k1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 759F2C281AABE4620029A5AB /* libsecp256k1.a */; };
 		E13696041ACC02AD00C405FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D5F3C1191EC270004AB296 /* Foundation.framework */; };
 		E13696051ACC02B000C405FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D5F3C5191EC270004AB296 /* UIKit.framework */; };
+		E15109B21ACC19AF0026AC3A /* BRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D5F3D1191EC270004AB296 /* BRAppDelegate.m */; };
+		E15109B31ACC19BB0026AC3A /* BRAppDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75D5F3D0191EC270004AB296 /* BRAppDelegate.h */; };
 		E19A17661ACC0E3900B2294E /* BreadWallet.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 752E2898192349CE00DB5A3C /* BreadWallet.xcdatamodeld */; };
 		E19A17671ACC0E3900B2294E /* BIP39EnglishWords.plist in Resources */ = {isa = PBXBuildFile; fileRef = 752E28F419235B3000DB5A3C /* BIP39EnglishWords.plist */; };
 		E19A17681ACC0E3900B2294E /* FixedPeers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 752E28F519235B3000DB5A3C /* FixedPeers.plist */; };
@@ -174,6 +176,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				E15109B31ACC19BB0026AC3A /* BRAppDelegate.h in CopyFiles */,
 				E13696021ACC026D00C405FC /* Reachability.h in CopyFiles */,
 				E13695FD1ACC026500C405FC /* NSString+Bitcoin.h in CopyFiles */,
 				E13695FE1ACC026500C405FC /* NSData+Bitcoin.h in CopyFiles */,
@@ -978,6 +981,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E15109B21ACC19AF0026AC3A /* BRAppDelegate.m in Sources */,
 				E13695E71ACC024D00C405FC /* Reachability.m in Sources */,
 				E13695E21ACC024300C405FC /* NSString+Bitcoin.m in Sources */,
 				E13695E31ACC024300C405FC /* NSData+Bitcoin.m in Sources */,
@@ -1428,12 +1432,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lgmp",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
 			};
 			name = Debug;
 		};
@@ -1457,12 +1463,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lgmp",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
 			};
 			name = GCov_Build;
 		};
@@ -1486,12 +1494,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lgmp",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
 			};
 			name = Release;
 		};
@@ -1626,6 +1636,7 @@
 				E19A17651ACC0E2C00B2294E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
