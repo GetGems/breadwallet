@@ -338,10 +338,16 @@ static NSString *getKeychainString(NSString *key, NSError **error)
     }
 }
 
-// requesting seedPhrase will trigger authentication
+/**
+ Will return the seed string with no authentication.
+ */
 - (NSString *)seedPhrase
 {
-    return [self seedPhraseWithPrompt:nil];
+    /**
+     So why did we cancel the authentication? 
+     We transfered the authentication to GetGems control to better manage it with our UI.
+     */
+    return getKeychainString(MNEMONIC_KEY, nil);//[self seedPhraseWithPrompt:nil];
 }
 
 - (void)setSeedPhrase:(NSString *)seedPhrase
