@@ -275,7 +275,8 @@ static NSString *getKeychainString(NSString *key, NSError **error)
         _wallet =
             [[BRWallet alloc] initWithContext:[NSManagedObject context] sequence:self.sequence
             masterPublicKey:self.masterPublicKey seed:^NSData *(NSString *authprompt, uint64_t amount) {
-                return [self seedWithPrompt:authprompt forAmount:amount];
+                // authentication is left for GetGems
+                return [self seed];//[self seedWithPrompt:authprompt forAmount:amount];
             }];
 
         _wallet.feePerKb = DEFAULT_FEE_PER_KB;
