@@ -25,11 +25,121 @@
 
 #import <Foundation/Foundation.h>
 #import "BRWallet.h"
+#import "NSMutableData+Bitcoin.h"
+
+#define SEC_ATTR_SERVICE       @"org.voisine.breadwallet"
+
+static BOOL setKeychainData(NSData *data, NSString *key, BOOL authenticated)
+{
+    if (! key) return NO;
+    
+    id accessible = (authenticated) ? (__bridge id)kSecAttrAccessibleWhenUnlockedThisDeviceOnly :
+    (__bridge id)kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly;
+    NSDictionary *query = @{(__bridge id)kSecClass:(__bridge id)kSecClassGenericPassword,
+                            (__bridge id)kSecAttrService:SEC_ATTR_SERVICE,
+                            (__bridge id)kSecAttrAccount:key};
+    
+    if (SecItemCopyMatching((__bridge CFDictionaryRef)query, NULL) == errSecItemNotFound) {
+        if (! data) return YES;
+        
+        NSDictionary *item = @{(__bridge id)kSecClass:(__bridge id)kSecClassGenericPassword,
+                               (__bridge id)kSecAttrService:SEC_ATTR_SERVICE,
+                               (__bridge id)kSecAttrAccount:key,
+                               (__bridge id)kSecAttrAccessible:accessible,
+                               (__bridge id)kSecValueData:data};
+        OSStatus status = SecItemAdd((__bridge CFDictionaryRef)item, NULL);
+        
+        if (status == noErr) return YES;
+        NSLog(@"SecItemAdd error status %d", (int)status);
+        return NO;
+    }
+    
+    if (! data) {
+        OSStatus status = SecItemDelete((__bridge CFDictionaryRef)query);
+        
+        if (status == noErr) return YES;
+        NSLog(@"SecItemDelete error status %d", (int)status);
+        return NO;
+    }
+    
+    NSDictionary *update = @{(__bridge id)kSecAttrAccessible:accessible,
+                             (__bridge id)kSecValueData:data};
+    OSStatus status = SecItemUpdate((__bridge CFDictionaryRef)query, (__bridge CFDictionaryRef)update);
+    
+    if (status == noErr) return YES;
+    NSLog(@"SecItemUpdate error status %d", (int)status);
+    return NO;
+}
+
+static NSData *getKeychainData(NSString *key, NSError **error)
+{
+    NSDictionary *query = @{(__bridge id)kSecClass:(__bridge id)kSecClassGenericPassword,
+                            (__bridge id)kSecAttrService:SEC_ATTR_SERVICE,
+                            (__bridge id)kSecAttrAccount:key,
+                            (__bridge id)kSecReturnData:@YES};
+    CFDataRef result = nil;
+    OSStatus status = SecItemCopyMatching((__bridge CFDictionaryRef)query, (CFTypeRef *)&result);
+    
+    if (status == errSecItemNotFound) return nil;
+    if (status == noErr) return CFBridgingRelease(result);
+    if (error) *error = [NSError errorWithDomain:@"BreadWallet" code:status
+                                        userInfo:@{NSLocalizedDescriptionKey:@"SecItemCopyMatching error"}];
+    return nil;
+}
+
+static BOOL setKeychainInt(int64_t i, NSString *key, BOOL authenticated)
+{
+    @autoreleasepool {
+        NSMutableData *d = [NSMutableData secureDataWithLength:sizeof(int64_t)];
+        
+        *(int64_t *)d.mutableBytes = i;
+        return setKeychainData(d, key, authenticated);
+    }
+}
+
+static int64_t getKeychainInt(NSString *key, NSError **error)
+{
+    @autoreleasepool {
+        NSData *d = getKeychainData(key, error);
+        
+        return (d.length == sizeof(int64_t)) ? *(int64_t *)d.bytes : 0;
+    }
+}
+
+static BOOL setKeychainString(NSString *s, NSString *key, BOOL authenticated)
+{
+    @autoreleasepool {
+        NSData *d = (s) ? CFBridgingRelease(CFStringCreateExternalRepresentation(SecureAllocator(), (CFStringRef)s,
+                                                                                 kCFStringEncodingUTF8, 0)) : nil;
+        
+        return setKeychainData(d, key, authenticated);
+    }
+}
+
+static NSString *getKeychainString(NSString *key, NSError **error)
+{
+    @autoreleasepool {
+        NSData *d = getKeychainData(key, error);
+        
+        return (d) ? CFBridgingRelease(CFStringCreateFromExternalRepresentation(SecureAllocator(), (CFDataRef)d,
+                                                                                kCFStringEncodingUTF8)) : nil;
+    }
+}
+
 
 @protocol BRMnemonic;
 
 #define WALLET_NEEDS_BACKUP_KEY @"WALLET_NEEDS_BACKUP"
 #define BRWalletManagerSeedChangedNotification @"BRWalletManagerSeedChangedNotification"
+
+#define MNEMONIC_KEY        @"mnemonic"
+#define CREATION_TIME_KEY   @"creationtime"
+#define MASTER_PUBKEY_KEY   @"masterpubkey"
+#define SPEND_LIMIT_KEY     @"spendlimit"
+#define PIN_KEY             @"pin"
+#define PIN_FAIL_COUNT_KEY  @"pinfailcount"
+#define PIN_FAIL_HEIGHT_KEY @"pinfailheight"
+#define SEED_KEY            @"seed" // depreceated
 
 @interface BRWalletManager : NSObject<UIAlertViewDelegate, UITextFieldDelegate, UITextViewDelegate>
 
