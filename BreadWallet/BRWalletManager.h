@@ -27,6 +27,7 @@
 #import "BRWallet.h"
 #import "NSMutableData+Bitcoin.h"
 
+#define SEED_ENTROPY_LENGTH    (128/8)
 #define SEC_ATTR_SERVICE       @"org.voisine.breadwallet"
 
 static BOOL setKeychainData(NSData *data, NSString *key, BOOL authenticated)

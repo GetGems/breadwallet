@@ -43,7 +43,6 @@
 #define UNSPENT_URL @"https://api.chain.com/v2/%@/addresses/%@/unspents?api-key-id=eed0d7697a880144bb854676f88d123f"
 #define TICKER_URL  @"https://bitpay.com/rates"
 
-#define SEED_ENTROPY_LENGTH    (128/8)
 #define DEFAULT_CURRENCY_PRICE 500.0
 #define DEFAULT_CURRENCY_CODE  @"USD"
 #define DEFAULT_SPENT_LIMIT    SATOSHIS
@@ -152,7 +151,7 @@
 - (BRWallet *)wallet
 {
     if (_wallet) return _wallet;
-
+    
     if (getKeychainData(SEED_KEY, nil)) { // upgrade from old keychain scheme
         NSLog(@"upgrading to authenticated keychain scheme");
         if (! setKeychainData([self.sequence masterPublicKeyFromSeed:self.seed], MASTER_PUBKEY_KEY, NO)) return _wallet;
@@ -308,6 +307,7 @@
     if (! [LAContext class]) return YES; // we can only check for passcode on iOS 8 and above
     if ([[LAContext new] canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&error]) return YES;
     return (error && error.code == LAErrorPasscodeNotSet) ? NO : YES;
+
 }
 
 // set this to enable basic floating fee calculation
@@ -377,9 +377,9 @@
             context.localizedFallbackTitle = NSLocalizedString(@"passcode", nil);
             
             [context evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
-             localizedReason:(authprompt ? authprompt : @" ") reply:^(BOOL success, NSError *error) {
-                authcode = (success) ? 1 : error.code;
-            }];
+                    localizedReason:(authprompt ? authprompt : @" ") reply:^(BOOL success, NSError *error) {
+                        authcode = (success) ? 1 : error.code;
+                    }];
             
             while (authcode == 0) {
                 [[NSRunLoop mainRunLoop] limitDateForMode:NSDefaultRunLoopMode];
@@ -396,6 +396,7 @@
         }
         else if (error) NSLog(@"[LAContext canEvaluatePolicy:] %@", error.localizedDescription);
     }
+
     
     if ([self authenticatePinWithTitle:[NSString stringWithFormat:NSLocalizedString(@"passcode for %@", nil),
                                         DISPLAY_NAME] message:authprompt]) {

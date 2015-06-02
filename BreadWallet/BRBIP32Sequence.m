@@ -30,11 +30,6 @@
 #import "NSMutableData+Bitcoin.h"
 #import <CommonCrypto/CommonHMAC.h>
 
-#define BIP32_HARD     0x80000000u
-#define BIP32_SEED_KEY "Bitcoin seed"
-#define BIP32_XPRV     "\x04\x88\xAD\xE4"
-#define BIP32_XPUB     "\x04\x88\xB2\x1E"
-
 // BIP32 is a scheme for deriving chains of addresses from a seed value
 // https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
 
@@ -52,7 +47,7 @@
 // - In case parse256(IL) >= n or ki = 0, the resulting key is invalid, and one should proceed with the next value for i
 //   (Note: this has probability lower than 1 in 2^127.)
 //
-static void CKDpriv(NSMutableData *k, NSMutableData *c, uint32_t i)
+void CKDpriv(NSMutableData *k, NSMutableData *c, uint32_t i)
 {
     NSMutableData *I = [NSMutableData secureDataWithLength:CC_SHA512_DIGEST_LENGTH];
     NSMutableData *d = [NSMutableData secureDataWithCapacity:33 + sizeof(i)];
@@ -87,7 +82,7 @@ static void CKDpriv(NSMutableData *k, NSMutableData *c, uint32_t i)
 // - In case parse256(IL) >= n or Ki is the point at infinity, the resulting key is invalid, and one should proceed with
 //   the next value for i.
 //
-static void CKDpub(NSMutableData *K, NSMutableData *c, uint32_t i)
+void CKDpub(NSMutableData *K, NSMutableData *c, uint32_t i)
 {
     if (i & BIP32_HARD) {
         @throw [NSException exceptionWithName:@"BRBIP32SequenceCKDPubException"
