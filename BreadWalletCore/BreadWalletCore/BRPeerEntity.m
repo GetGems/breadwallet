@@ -38,12 +38,14 @@
 
 - (instancetype)setAttributesFromPeer:(BRPeer *)peer
 {
-    [[self managedObjectContext] performBlockAndWait:^{
+    [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
         self.address = peer.address;
         self.port = peer.port;
         self.timestamp = peer.timestamp;
         self.services = peer.services;
         self.misbehavin = peer.misbehavin;
+    } completion:^(BOOL contextDidSave, NSError *error) {
+        
     }];
 
     return self;
@@ -53,12 +55,10 @@
 {
     __block BRPeer *peer = nil;
 
-    [[self managedObjectContext] performBlockAndWait:^{
-        peer = [[BRPeer alloc] initWithAddress:self.address port:self.port timestamp:self.timestamp
-                services:self.services];
-        peer.misbehavin = self.misbehavin;
-    }];
-
+    peer = [[BRPeer alloc] initWithAddress:self.address port:self.port timestamp:self.timestamp
+                                  services:self.services];
+    peer.misbehavin = self.misbehavin;
+    
     return peer;
 }
 

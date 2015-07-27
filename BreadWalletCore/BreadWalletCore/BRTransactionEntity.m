@@ -44,35 +44,35 @@
 
 - (instancetype)setAttributesFromTx:(BRTransaction *)tx
 {
-    [[self managedObjectContext] performBlockAndWait:^{
-        NSMutableOrderedSet *inputs = [self mutableOrderedSetValueForKey:@"inputs"];
-        NSMutableOrderedSet *outputs = [self mutableOrderedSetValueForKey:@"outputs"];
+    [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
+        NSMutableOrderedSet *inputs = [[NSMutableOrderedSet alloc] initWithOrderedSet:self.inputs];//[self mutableOrderedSetValueForKey:@"inputs"];
+        NSMutableOrderedSet *outputs = [[NSMutableOrderedSet alloc] initWithOrderedSet:self.outputs];//[self mutableOrderedSetValueForKey:@"outputs"];
         NSUInteger idx = 0;
         
         self.txHash = tx.txHash;
         self.blockHeight = tx.blockHeight;
         self.timestamp = tx.timestamp;
-    
+        
         while (inputs.count < tx.inputHashes.count) {
             [inputs addObject:[BRTxInputEntity MR_createEntity]];
         }
-    
+        
         while (inputs.count > tx.inputHashes.count) {
             [inputs removeObjectAtIndex:inputs.count - 1];
         }
-    
+        
         for (BRTxInputEntity *e in inputs) {
             [e setAttributesFromTx:tx inputIndex:idx++];
         }
-
+        
         while (outputs.count < tx.outputAddresses.count) {
             [outputs addObject:[BRTxInputEntity MR_createEntity]];
         }
-    
+        
         while (outputs.count > tx.outputAddresses.count) {
             [self removeObjectFromOutputsAtIndex:outputs.count - 1];
         }
-
+        
         idx = 0;
         
         for (BRTxOutputEntity *e in outputs) {
@@ -80,6 +80,8 @@
         }
         
         self.lockTime = tx.lockTime;
+    } completion:^(BOOL contextDidSave, NSError *error) {
+        
     }];
     
     return self;
@@ -89,20 +91,18 @@
 {
     BRTransaction *tx = [BRTransaction new];
     
-    [[self managedObjectContext] performBlockAndWait:^{
-        tx.txHash = self.txHash;
-        tx.lockTime = self.lockTime;
-        tx.blockHeight = self.blockHeight;
-        tx.timestamp = self.timestamp;
+    tx.txHash = self.txHash;
+    tx.lockTime = self.lockTime;
+    tx.blockHeight = self.blockHeight;
+    tx.timestamp = self.timestamp;
     
-        for (BRTxInputEntity *e in self.inputs) {
-            [tx addInputHash:e.txHash index:e.n script:nil signature:e.signature sequence:e.sequence];
-        }
-        
-        for (BRTxOutputEntity *e in self.outputs) {
-            [tx addOutputScript:e.script amount:e.value];
-        }
-    }];
+    for (BRTxInputEntity *e in self.inputs) {
+        [tx addInputHash:e.txHash index:e.n script:nil signature:e.signature sequence:e.sequence];
+    }
+    
+    for (BRTxOutputEntity *e in self.outputs) {
+        [tx addOutputScript:e.script amount:e.value];
+    }
     
     return tx;
 }

@@ -40,12 +40,14 @@
 
 - (instancetype)setAttributesFromTx:(BRTransaction *)tx outputIndex:(NSUInteger)index
 {
-    [[self managedObjectContext] performBlockAndWait:^{
+    [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
         self.txHash = tx.txHash;
         self.n = (int32_t)index;
         self.address = (tx.outputAddresses[index] == [NSNull null]) ? nil : tx.outputAddresses[index];
         self.script = tx.outputScripts[index];
         self.value = [tx.outputAmounts[index] longLongValue];
+    } completion:^(BOOL contextDidSave, NSError *error) {
+        
     }];
     
     return self;
