@@ -1,0 +1,1 @@
+../../../../BreadWalletCore/BreadWalletCore/MagicalRecord+BreadWallet.h

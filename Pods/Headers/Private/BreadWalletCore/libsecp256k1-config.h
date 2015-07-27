@@ -1,0 +1,1 @@
+../../../../BreadWalletCore/BreadWalletCore/libsecp256k1-config.h

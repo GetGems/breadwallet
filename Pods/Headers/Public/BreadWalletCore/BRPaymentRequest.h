@@ -1,0 +1,1 @@
+../../../../BreadWalletCore/BreadWalletCore/BRPaymentRequest.h

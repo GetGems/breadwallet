@@ -1,0 +1,1 @@
+../../../../BreadWalletCore/BreadWalletCore/BRTxOutputEntity.h

@@ -1,0 +1,1 @@
+../../../../BreadWalletCore/BreadWalletCore/BRBIP32Sequence.h

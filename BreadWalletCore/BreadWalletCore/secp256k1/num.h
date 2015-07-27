@@ -7,8 +7,6 @@
 #ifndef _SECP256K1_NUM_
 #define _SECP256K1_NUM_
 
-#import "BreadWalletCommons.h"
-
 #ifndef USE_NUM_NONE
 
 #if defined HAVE_CONFIG_H

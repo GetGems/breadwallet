@@ -1,0 +1,40 @@
+{
+  "name": "BreadWalletCore",
+  "version": "0.0.1",
+  "summary": "A short description of BreadWalletCore.",
+  "description": "                   A longer description of BreadWalletCore in Markdown format.\n\n                   * Think: Why did you write this? What is the focus? What does it do?\n                   * CocoaPods will be using this to generate tags, and improve search results.\n                   * Try to keep it short, snappy and to the point.\n                   * Finally, don't worry about the indent, CocoaPods strips it!\n",
+  "homepage": "http://EXAMPLE/BreadWalletCore",
+  "license": "MIT (example)",
+  "authors": {
+    "Alon Muroch": "alonmuroch@gmail.com"
+  },
+  "platforms": {
+    "ios": "7.1"
+  },
+  "source_files": [
+    "libsecp256k1/include/secp256k1/*.{h}",
+    "BreadWalletCore",
+    "BreadWalletCore/**/*.{h,m}"
+  ],
+  "public_header_files": "BreadWalletCore/**/*.h",
+  "resource_bundles": {
+    "BreadWalletCore": [
+      "BreadWalletCoreBundle/**/*"
+    ]
+  },
+  "preserve_paths": "libsecp256k1/libsecp256k1.a",
+  "vendored_libraries": "libsecp256k1/libsecp256k1.a",
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "requires_arc": true,
+  "xcconfig": {
+    "HEADER_SEARCH_PATHS": "/usr/local/include"
+  },
+  "dependencies": {
+    "MagicalRecord": [
+      "~> 2.2"
+    ]
+  }
+}

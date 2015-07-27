@@ -1,0 +1,1 @@
+../../../../BreadWalletCore/BreadWalletCore/secp256k1/scalar_impl.h

@@ -9,34 +9,9 @@
 /* Begin PBXBuildFile section */
 		7525B619192453840041C0F2 /* BRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7525B618192453840041C0F2 /* BRNavigationBar.m */; };
 		752E289A192349CE00DB5A3C /* BreadWallet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 752E2898192349CE00DB5A3C /* BreadWallet.xcdatamodeld */; };
-		752E28AA19234AE300DB5A3C /* BRAddressEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E289F19234AE300DB5A3C /* BRAddressEntity.m */; };
-		752E28AB19234AE300DB5A3C /* BRMerkleBlockEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28A119234AE300DB5A3C /* BRMerkleBlockEntity.m */; };
-		752E28AC19234AE300DB5A3C /* BRPeerEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28A319234AE300DB5A3C /* BRPeerEntity.m */; };
-		752E28AD19234AE300DB5A3C /* BRTransactionEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28A519234AE300DB5A3C /* BRTransactionEntity.m */; };
-		752E28AE19234AE300DB5A3C /* BRTxInputEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28A719234AE300DB5A3C /* BRTxInputEntity.m */; };
-		752E28AF19234AE300DB5A3C /* BRTxOutputEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28A919234AE300DB5A3C /* BRTxOutputEntity.m */; };
-		752E28CE19234C3600DB5A3C /* BRBIP32Sequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28B119234C3600DB5A3C /* BRBIP32Sequence.m */; };
-		752E28CF19234C3600DB5A3C /* BRBIP39Mnemonic.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28B319234C3600DB5A3C /* BRBIP39Mnemonic.m */; };
-		752E28D019234C3600DB5A3C /* BRBloomFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28B519234C3600DB5A3C /* BRBloomFilter.m */; };
-		752E28D119234C3600DB5A3C /* BRKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28B719234C3600DB5A3C /* BRKey.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		752E28D219234C3600DB5A3C /* BRKey+BIP38.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28B919234C3600DB5A3C /* BRKey+BIP38.m */; };
-		752E28D319234C3600DB5A3C /* BRMerkleBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28BC19234C3600DB5A3C /* BRMerkleBlock.m */; };
-		752E28D419234C3600DB5A3C /* BRPaymentProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28BF19234C3600DB5A3C /* BRPaymentProtocol.m */; };
-		752E28D519234C3600DB5A3C /* BRPaymentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28C119234C3600DB5A3C /* BRPaymentRequest.m */; };
-		752E28D619234C3600DB5A3C /* BRPeer.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28C319234C3600DB5A3C /* BRPeer.m */; };
-		752E28D819234C3600DB5A3C /* BRPeerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28C719234C3600DB5A3C /* BRPeerManager.m */; };
-		752E28D919234C3600DB5A3C /* BRTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28C919234C3600DB5A3C /* BRTransaction.m */; };
-		752E28DA19234C3600DB5A3C /* BRWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28CB19234C3600DB5A3C /* BRWallet.m */; };
-		752E28DB19234C3600DB5A3C /* BRWalletManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28CD19234C3600DB5A3C /* BRWalletManager.m */; };
-		752E28E719234DA200DB5A3C /* NSData+Bitcoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28DE19234DA200DB5A3C /* NSData+Bitcoin.m */; };
-		752E28E919234DA200DB5A3C /* NSManagedObject+Sugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28E219234DA200DB5A3C /* NSManagedObject+Sugar.m */; };
-		752E28EA19234DA200DB5A3C /* NSMutableData+Bitcoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28E419234DA200DB5A3C /* NSMutableData+Bitcoin.m */; };
-		752E28EB19234DA200DB5A3C /* NSString+Bitcoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28E619234DA200DB5A3C /* NSString+Bitcoin.m */; };
-		752E28F119234E8100DB5A3C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28F019234E8100DB5A3C /* Reachability.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		752E28F619235B3000DB5A3C /* BIP39EnglishWords.plist in Resources */ = {isa = PBXBuildFile; fileRef = 752E28F419235B3000DB5A3C /* BIP39EnglishWords.plist */; };
 		752E28F719235B3000DB5A3C /* FixedPeers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 752E28F519235B3000DB5A3C /* FixedPeers.plist */; };
 		7548CF3719556FD700EF827F /* BRCopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7548CF3619556FD700EF827F /* BRCopyLabel.m */; };
-		75767C421A0EC6F9003E7DE9 /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = 75767C411A0EC6F9003E7DE9 /* UIImage+Blur.m */; };
 		757BE7E3192C0E9D0061CB20 /* BRRestoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757BE7E2192C0E9D0061CB20 /* BRRestoreViewController.m */; };
 		757BE7E6192C1FF70061CB20 /* BRWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757BE7E5192C1FF70061CB20 /* BRWelcomeViewController.m */; };
 		757BE7E9192D4E880061CB20 /* BRSeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757BE7E8192D4E880061CB20 /* BRSeedViewController.m */; };
@@ -47,7 +22,6 @@
 		75878BC6192B1AF0002505AB /* BRTxHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75878BC5192B1AF0002505AB /* BRTxHistoryViewController.m */; };
 		758DBD0E1980634900389E2A /* BRTxDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 758DBD0D1980634900389E2A /* BRTxDetailViewController.m */; };
 		759816E719357D6F005060EA /* BRBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 759816E619357D6F005060EA /* BRBubbleView.m */; };
-		759F2C431AABE4B60029A5AB /* secp256k1.c in Sources */ = {isa = PBXBuildFile; fileRef = 758B16541AA9ADC4002C65DD /* secp256k1.c */; };
 		759F2C461AABE5540029A5AB /* libsecp256k1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 759F2C281AABE4620029A5AB /* libsecp256k1.a */; };
 		759FBB36193290F600AB4465 /* BRRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 759FBB33193290F600AB4465 /* BRRootViewController.m */; };
 		759FBB37193290F600AB4465 /* BRSendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 759FBB35193290F600AB4465 /* BRSendViewController.m */; };
@@ -67,6 +41,7 @@
 		75D5F3F1191EC270004AB296 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75D5F3EF191EC270004AB296 /* InfoPlist.strings */; };
 		75D5F3F3191EC270004AB296 /* BreadWalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D5F3F2191EC270004AB296 /* BreadWalletTests.m */; };
 		84F68C8A1975E9E2002FC300 /* BRScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F68C891975E9E2002FC300 /* BRScanViewController.m */; };
+		C81001C71267DA81FA578A2A /* libPods-breadwallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E469B56A87EBDF31E8B2CAD6 /* libPods-breadwallet.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,65 +81,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0DF5D897C69BE6C0D7FBE0E9 /* Pods-breadwallet.gcov_build.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breadwallet.gcov_build.xcconfig"; path = "Pods/Target Support Files/Pods-breadwallet/Pods-breadwallet.gcov_build.xcconfig"; sourceTree = "<group>"; };
 		7525B617192453840041C0F2 /* BRNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRNavigationBar.h; sourceTree = "<group>"; };
 		7525B618192453840041C0F2 /* BRNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRNavigationBar.m; sourceTree = "<group>"; };
 		752E2899192349CE00DB5A3C /* BreadWallet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BreadWallet.xcdatamodel; sourceTree = "<group>"; };
-		752E289E19234AE300DB5A3C /* BRAddressEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAddressEntity.h; sourceTree = "<group>"; };
-		752E289F19234AE300DB5A3C /* BRAddressEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAddressEntity.m; sourceTree = "<group>"; };
-		752E28A019234AE300DB5A3C /* BRMerkleBlockEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRMerkleBlockEntity.h; sourceTree = "<group>"; };
-		752E28A119234AE300DB5A3C /* BRMerkleBlockEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRMerkleBlockEntity.m; sourceTree = "<group>"; };
-		752E28A219234AE300DB5A3C /* BRPeerEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPeerEntity.h; sourceTree = "<group>"; };
-		752E28A319234AE300DB5A3C /* BRPeerEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRPeerEntity.m; sourceTree = "<group>"; };
-		752E28A419234AE300DB5A3C /* BRTransactionEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTransactionEntity.h; sourceTree = "<group>"; };
-		752E28A519234AE300DB5A3C /* BRTransactionEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTransactionEntity.m; sourceTree = "<group>"; };
-		752E28A619234AE300DB5A3C /* BRTxInputEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTxInputEntity.h; sourceTree = "<group>"; };
-		752E28A719234AE300DB5A3C /* BRTxInputEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTxInputEntity.m; sourceTree = "<group>"; };
-		752E28A819234AE300DB5A3C /* BRTxOutputEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTxOutputEntity.h; sourceTree = "<group>"; };
-		752E28A919234AE300DB5A3C /* BRTxOutputEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTxOutputEntity.m; sourceTree = "<group>"; };
-		752E28B119234C3600DB5A3C /* BRBIP32Sequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBIP32Sequence.m; sourceTree = "<group>"; };
-		752E28B219234C3600DB5A3C /* BRBIP39Mnemonic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBIP39Mnemonic.h; sourceTree = "<group>"; };
-		752E28B319234C3600DB5A3C /* BRBIP39Mnemonic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBIP39Mnemonic.m; sourceTree = "<group>"; };
-		752E28B419234C3600DB5A3C /* BRBloomFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBloomFilter.h; sourceTree = "<group>"; };
-		752E28B519234C3600DB5A3C /* BRBloomFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBloomFilter.m; sourceTree = "<group>"; };
-		752E28B619234C3600DB5A3C /* BRKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRKey.h; sourceTree = "<group>"; };
-		752E28B719234C3600DB5A3C /* BRKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRKey.m; sourceTree = "<group>"; };
-		752E28B819234C3600DB5A3C /* BRKey+BIP38.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BRKey+BIP38.h"; sourceTree = "<group>"; };
-		752E28B919234C3600DB5A3C /* BRKey+BIP38.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BRKey+BIP38.m"; sourceTree = "<group>"; };
-		752E28BA19234C3600DB5A3C /* BRKeySequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRKeySequence.h; sourceTree = "<group>"; };
-		752E28BB19234C3600DB5A3C /* BRMerkleBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRMerkleBlock.h; sourceTree = "<group>"; };
-		752E28BC19234C3600DB5A3C /* BRMerkleBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRMerkleBlock.m; sourceTree = "<group>"; };
-		752E28BD19234C3600DB5A3C /* BRMnemonic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRMnemonic.h; sourceTree = "<group>"; };
-		752E28BE19234C3600DB5A3C /* BRPaymentProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPaymentProtocol.h; sourceTree = "<group>"; };
-		752E28BF19234C3600DB5A3C /* BRPaymentProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRPaymentProtocol.m; sourceTree = "<group>"; };
-		752E28C019234C3600DB5A3C /* BRPaymentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPaymentRequest.h; sourceTree = "<group>"; };
-		752E28C119234C3600DB5A3C /* BRPaymentRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BRPaymentRequest.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		752E28C219234C3600DB5A3C /* BRPeer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPeer.h; sourceTree = "<group>"; };
-		752E28C319234C3600DB5A3C /* BRPeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BRPeer.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		752E28C619234C3600DB5A3C /* BRPeerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPeerManager.h; sourceTree = "<group>"; };
-		752E28C719234C3600DB5A3C /* BRPeerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BRPeerManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		752E28C819234C3600DB5A3C /* BRTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTransaction.h; sourceTree = "<group>"; };
-		752E28C919234C3600DB5A3C /* BRTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTransaction.m; sourceTree = "<group>"; };
-		752E28CA19234C3600DB5A3C /* BRWallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRWallet.h; sourceTree = "<group>"; };
-		752E28CB19234C3600DB5A3C /* BRWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRWallet.m; sourceTree = "<group>"; };
-		752E28CC19234C3600DB5A3C /* BRWalletManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRWalletManager.h; sourceTree = "<group>"; };
-		752E28CD19234C3600DB5A3C /* BRWalletManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRWalletManager.m; sourceTree = "<group>"; };
-		752E28DC19234D1000DB5A3C /* BRBIP32Sequence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRBIP32Sequence.h; sourceTree = "<group>"; };
-		752E28DD19234DA200DB5A3C /* NSData+Bitcoin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Bitcoin.h"; sourceTree = "<group>"; };
-		752E28DE19234DA200DB5A3C /* NSData+Bitcoin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Bitcoin.m"; sourceTree = "<group>"; };
-		752E28E119234DA200DB5A3C /* NSManagedObject+Sugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+Sugar.h"; sourceTree = "<group>"; };
-		752E28E219234DA200DB5A3C /* NSManagedObject+Sugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Sugar.m"; sourceTree = "<group>"; };
-		752E28E319234DA200DB5A3C /* NSMutableData+Bitcoin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+Bitcoin.h"; sourceTree = "<group>"; };
-		752E28E419234DA200DB5A3C /* NSMutableData+Bitcoin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+Bitcoin.m"; sourceTree = "<group>"; };
-		752E28E519234DA200DB5A3C /* NSString+Bitcoin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Bitcoin.h"; sourceTree = "<group>"; };
-		752E28E619234DA200DB5A3C /* NSString+Bitcoin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Bitcoin.m"; sourceTree = "<group>"; };
-		752E28EF19234E8100DB5A3C /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = SOURCE_ROOT; };
-		752E28F019234E8100DB5A3C /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = SOURCE_ROOT; };
 		752E28F419235B3000DB5A3C /* BIP39EnglishWords.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BIP39EnglishWords.plist; sourceTree = "<group>"; };
 		752E28F519235B3000DB5A3C /* FixedPeers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FixedPeers.plist; sourceTree = "<group>"; };
 		7548CF3519556FD700EF827F /* BRCopyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRCopyLabel.h; sourceTree = "<group>"; };
 		7548CF3619556FD700EF827F /* BRCopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRCopyLabel.m; sourceTree = "<group>"; };
-		75767C401A0EC6F9003E7DE9 /* UIImage+Blur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Blur.h"; sourceTree = "<group>"; };
-		75767C411A0EC6F9003E7DE9 /* UIImage+Blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Blur.m"; sourceTree = "<group>"; };
 		757BE7E1192C0E9D0061CB20 /* BRRestoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRestoreViewController.h; sourceTree = "<group>"; };
 		757BE7E2192C0E9D0061CB20 /* BRRestoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BRRestoreViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		757BE7E4192C1FF70061CB20 /* BRWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRWelcomeViewController.h; sourceTree = "<group>"; };
@@ -180,37 +104,11 @@
 		75878BC2192AED38002505AB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		75878BC4192B1AF0002505AB /* BRTxHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTxHistoryViewController.h; sourceTree = "<group>"; };
 		75878BC5192B1AF0002505AB /* BRTxHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BRTxHistoryViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		758B16241AA9ADC4002C65DD /* secp256k1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secp256k1.h; sourceTree = "<group>"; };
-		758B16301AA9ADC4002C65DD /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
-		758B16311AA9ADC4002C65DD /* ecdsa_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa_impl.h; sourceTree = "<group>"; };
-		758B16321AA9ADC4002C65DD /* eckey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eckey.h; sourceTree = "<group>"; };
-		758B16331AA9ADC4002C65DD /* eckey_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eckey_impl.h; sourceTree = "<group>"; };
-		758B16341AA9ADC4002C65DD /* ecmult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecmult.h; sourceTree = "<group>"; };
-		758B16351AA9ADC4002C65DD /* ecmult_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecmult_gen.h; sourceTree = "<group>"; };
-		758B16361AA9ADC4002C65DD /* ecmult_gen_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecmult_gen_impl.h; sourceTree = "<group>"; };
-		758B16371AA9ADC4002C65DD /* ecmult_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecmult_impl.h; sourceTree = "<group>"; };
-		758B16381AA9ADC4002C65DD /* field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field.h; sourceTree = "<group>"; };
-		758B16391AA9ADC4002C65DD /* field_10x26.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field_10x26.h; sourceTree = "<group>"; };
-		758B163A1AA9ADC4002C65DD /* field_10x26_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field_10x26_impl.h; sourceTree = "<group>"; };
-		758B163F1AA9ADC4002C65DD /* field_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field_impl.h; sourceTree = "<group>"; };
-		758B16401AA9ADC4002C65DD /* group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group.h; sourceTree = "<group>"; };
-		758B16411AA9ADC4002C65DD /* group_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group_impl.h; sourceTree = "<group>"; };
-		758B16421AA9ADC4002C65DD /* hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash.h; sourceTree = "<group>"; };
-		758B16431AA9ADC4002C65DD /* hash_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash_impl.h; sourceTree = "<group>"; };
-		758B164A1AA9ADC4002C65DD /* num.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = num.h; sourceTree = "<group>"; };
-		758B164D1AA9ADC4002C65DD /* num_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = num_impl.h; sourceTree = "<group>"; };
-		758B164E1AA9ADC4002C65DD /* scalar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar.h; sourceTree = "<group>"; };
-		758B16511AA9ADC4002C65DD /* scalar_8x32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar_8x32.h; sourceTree = "<group>"; };
-		758B16521AA9ADC4002C65DD /* scalar_8x32_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar_8x32_impl.h; sourceTree = "<group>"; };
-		758B16531AA9ADC4002C65DD /* scalar_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar_impl.h; sourceTree = "<group>"; };
-		758B16541AA9ADC4002C65DD /* secp256k1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = secp256k1.c; sourceTree = "<group>"; };
-		758B16581AA9ADC4002C65DD /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
 		758DBD0C1980634900389E2A /* BRTxDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTxDetailViewController.h; sourceTree = "<group>"; };
 		758DBD0D1980634900389E2A /* BRTxDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTxDetailViewController.m; sourceTree = "<group>"; };
 		759816E519357D6F005060EA /* BRBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBubbleView.h; sourceTree = "<group>"; };
 		759816E619357D6F005060EA /* BRBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBubbleView.m; sourceTree = "<group>"; };
 		759AB7F71AB8F45900303AAB /* BreadWallet 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "BreadWallet 2.xcdatamodel"; sourceTree = "<group>"; };
-		759F2C221AAAD42D0029A5AB /* libsecp256k1-config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libsecp256k1-config.h"; sourceTree = SOURCE_ROOT; };
 		759F2C281AABE4620029A5AB /* libsecp256k1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsecp256k1.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		759FBB31193290F600AB4465 /* BRReceiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRReceiveViewController.h; sourceTree = "<group>"; };
 		759FBB32193290F600AB4465 /* BRRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRootViewController.h; sourceTree = "<group>"; };
@@ -238,9 +136,11 @@
 		75D5F3EE191EC270004AB296 /* BreadWalletTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BreadWalletTests-Info.plist"; sourceTree = "<group>"; };
 		75D5F3F0191EC270004AB296 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		75D5F3F2191EC270004AB296 /* BreadWalletTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BreadWalletTests.m; sourceTree = "<group>"; };
-		75F27B0619DE2AB20047FC62 /* ccMemory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ccMemory.h; sourceTree = SOURCE_ROOT; };
 		84F68C881975E9E2002FC300 /* BRScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRScanViewController.h; sourceTree = "<group>"; };
 		84F68C891975E9E2002FC300 /* BRScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRScanViewController.m; sourceTree = "<group>"; };
+		A91CFFF87B15726C189B9B5B /* Pods-breadwallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breadwallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-breadwallet/Pods-breadwallet.release.xcconfig"; sourceTree = "<group>"; };
+		D608EA859955BCF34887BC57 /* Pods-breadwallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breadwallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-breadwallet/Pods-breadwallet.debug.xcconfig"; sourceTree = "<group>"; };
+		E469B56A87EBDF31E8B2CAD6 /* libPods-breadwallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-breadwallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +160,7 @@
 				75D5F3C4191EC270004AB296 /* CoreGraphics.framework in Frameworks */,
 				75D5F3C6191EC270004AB296 /* UIKit.framework in Frameworks */,
 				75D5F3C2191EC270004AB296 /* Foundation.framework in Frameworks */,
+				C81001C71267DA81FA578A2A /* libPods-breadwallet.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +177,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C29AA34899188EE40D6DBD9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D608EA859955BCF34887BC57 /* Pods-breadwallet.debug.xcconfig */,
+				0DF5D897C69BE6C0D7FBE0E9 /* Pods-breadwallet.gcov_build.xcconfig */,
+				A91CFFF87B15726C189B9B5B /* Pods-breadwallet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		752E289B19234A3F00DB5A3C /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,136 +202,11 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		752E289C19234A4700DB5A3C /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				752E289D19234A4E00DB5A3C /* Entities */,
-				752E28B619234C3600DB5A3C /* BRKey.h */,
-				752E28B719234C3600DB5A3C /* BRKey.m */,
-				752E28B819234C3600DB5A3C /* BRKey+BIP38.h */,
-				752E28B919234C3600DB5A3C /* BRKey+BIP38.m */,
-				752E28C819234C3600DB5A3C /* BRTransaction.h */,
-				752E28C919234C3600DB5A3C /* BRTransaction.m */,
-				752E28BA19234C3600DB5A3C /* BRKeySequence.h */,
-				752E28DC19234D1000DB5A3C /* BRBIP32Sequence.h */,
-				752E28B119234C3600DB5A3C /* BRBIP32Sequence.m */,
-				752E28BD19234C3600DB5A3C /* BRMnemonic.h */,
-				752E28B219234C3600DB5A3C /* BRBIP39Mnemonic.h */,
-				752E28B319234C3600DB5A3C /* BRBIP39Mnemonic.m */,
-				752E28CA19234C3600DB5A3C /* BRWallet.h */,
-				752E28CB19234C3600DB5A3C /* BRWallet.m */,
-				752E28CC19234C3600DB5A3C /* BRWalletManager.h */,
-				752E28CD19234C3600DB5A3C /* BRWalletManager.m */,
-				752E28BB19234C3600DB5A3C /* BRMerkleBlock.h */,
-				752E28BC19234C3600DB5A3C /* BRMerkleBlock.m */,
-				752E28B419234C3600DB5A3C /* BRBloomFilter.h */,
-				752E28B519234C3600DB5A3C /* BRBloomFilter.m */,
-				752E28C219234C3600DB5A3C /* BRPeer.h */,
-				752E28C319234C3600DB5A3C /* BRPeer.m */,
-				752E28C619234C3600DB5A3C /* BRPeerManager.h */,
-				752E28C719234C3600DB5A3C /* BRPeerManager.m */,
-				752E28BE19234C3600DB5A3C /* BRPaymentProtocol.h */,
-				752E28BF19234C3600DB5A3C /* BRPaymentProtocol.m */,
-				752E28C019234C3600DB5A3C /* BRPaymentRequest.h */,
-				752E28C119234C3600DB5A3C /* BRPaymentRequest.m */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		752E289D19234A4E00DB5A3C /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				752E289E19234AE300DB5A3C /* BRAddressEntity.h */,
-				752E289F19234AE300DB5A3C /* BRAddressEntity.m */,
-				752E28A019234AE300DB5A3C /* BRMerkleBlockEntity.h */,
-				752E28A119234AE300DB5A3C /* BRMerkleBlockEntity.m */,
-				752E28A219234AE300DB5A3C /* BRPeerEntity.h */,
-				752E28A319234AE300DB5A3C /* BRPeerEntity.m */,
-				752E28A419234AE300DB5A3C /* BRTransactionEntity.h */,
-				752E28A519234AE300DB5A3C /* BRTransactionEntity.m */,
-				752E28A619234AE300DB5A3C /* BRTxInputEntity.h */,
-				752E28A719234AE300DB5A3C /* BRTxInputEntity.m */,
-				752E28A819234AE300DB5A3C /* BRTxOutputEntity.h */,
-				752E28A919234AE300DB5A3C /* BRTxOutputEntity.m */,
-			);
-			name = Entities;
-			sourceTree = "<group>";
-		};
-		752E28B019234B0500DB5A3C /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				752E28E519234DA200DB5A3C /* NSString+Bitcoin.h */,
-				752E28E619234DA200DB5A3C /* NSString+Bitcoin.m */,
-				752E28DD19234DA200DB5A3C /* NSData+Bitcoin.h */,
-				752E28DE19234DA200DB5A3C /* NSData+Bitcoin.m */,
-				752E28E319234DA200DB5A3C /* NSMutableData+Bitcoin.h */,
-				752E28E419234DA200DB5A3C /* NSMutableData+Bitcoin.m */,
-				752E28E119234DA200DB5A3C /* NSManagedObject+Sugar.h */,
-				752E28E219234DA200DB5A3C /* NSManagedObject+Sugar.m */,
-				75767C401A0EC6F9003E7DE9 /* UIImage+Blur.h */,
-				75767C411A0EC6F9003E7DE9 /* UIImage+Blur.m */,
-			);
-			name = Categories;
-			sourceTree = "<group>";
-		};
 		7579F7FE19231D4600CA56F4 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
-				752E28EF19234E8100DB5A3C /* Reachability.h */,
-				752E28F019234E8100DB5A3C /* Reachability.m */,
-				75F27B0619DE2AB20047FC62 /* ccMemory.h */,
-				758B161A1AA9ADC4002C65DD /* secp256k1 */,
-				759F2C221AAAD42D0029A5AB /* libsecp256k1-config.h */,
 			);
 			name = ThirdParty;
-			sourceTree = "<group>";
-		};
-		758B161A1AA9ADC4002C65DD /* secp256k1 */ = {
-			isa = PBXGroup;
-			children = (
-				758B16231AA9ADC4002C65DD /* include */,
-				758B162A1AA9ADC4002C65DD /* src */,
-			);
-			path = secp256k1;
-			sourceTree = SOURCE_ROOT;
-		};
-		758B16231AA9ADC4002C65DD /* include */ = {
-			isa = PBXGroup;
-			children = (
-				758B16241AA9ADC4002C65DD /* secp256k1.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		758B162A1AA9ADC4002C65DD /* src */ = {
-			isa = PBXGroup;
-			children = (
-				758B16301AA9ADC4002C65DD /* ecdsa.h */,
-				758B16311AA9ADC4002C65DD /* ecdsa_impl.h */,
-				758B16321AA9ADC4002C65DD /* eckey.h */,
-				758B16331AA9ADC4002C65DD /* eckey_impl.h */,
-				758B16341AA9ADC4002C65DD /* ecmult.h */,
-				758B16351AA9ADC4002C65DD /* ecmult_gen.h */,
-				758B16361AA9ADC4002C65DD /* ecmult_gen_impl.h */,
-				758B16371AA9ADC4002C65DD /* ecmult_impl.h */,
-				758B16381AA9ADC4002C65DD /* field.h */,
-				758B16391AA9ADC4002C65DD /* field_10x26.h */,
-				758B163A1AA9ADC4002C65DD /* field_10x26_impl.h */,
-				758B163F1AA9ADC4002C65DD /* field_impl.h */,
-				758B16401AA9ADC4002C65DD /* group.h */,
-				758B16411AA9ADC4002C65DD /* group_impl.h */,
-				758B16421AA9ADC4002C65DD /* hash.h */,
-				758B16431AA9ADC4002C65DD /* hash_impl.h */,
-				758B164A1AA9ADC4002C65DD /* num.h */,
-				758B164D1AA9ADC4002C65DD /* num_impl.h */,
-				758B164E1AA9ADC4002C65DD /* scalar.h */,
-				758B16511AA9ADC4002C65DD /* scalar_8x32.h */,
-				758B16521AA9ADC4002C65DD /* scalar_8x32_impl.h */,
-				758B16531AA9ADC4002C65DD /* scalar_impl.h */,
-				758B16541AA9ADC4002C65DD /* secp256k1.c */,
-				758B16581AA9ADC4002C65DD /* util.h */,
-			);
-			path = src;
 			sourceTree = "<group>";
 		};
 		75BA5D02192296010040304C /* Controllers */ = {
@@ -459,6 +245,7 @@
 				75D5F3EC191EC270004AB296 /* BreadWalletTests */,
 				75D5F3C0191EC270004AB296 /* Frameworks */,
 				75D5F3BF191EC270004AB296 /* Products */,
+				2C29AA34899188EE40D6DBD9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -480,6 +267,7 @@
 				75D5F3C3191EC270004AB296 /* CoreGraphics.framework */,
 				75D5F3C5191EC270004AB296 /* UIKit.framework */,
 				75D5F3E6191EC270004AB296 /* XCTest.framework */,
+				E469B56A87EBDF31E8B2CAD6 /* libPods-breadwallet.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -487,10 +275,8 @@
 		75D5F3C7191EC270004AB296 /* BreadWallet */ = {
 			isa = PBXGroup;
 			children = (
-				752E289C19234A4700DB5A3C /* Models */,
 				752E289B19234A3F00DB5A3C /* Views */,
 				75BA5D02192296010040304C /* Controllers */,
-				752E28B019234B0500DB5A3C /* Categories */,
 				75D5F3D0191EC270004AB296 /* BRAppDelegate.h */,
 				75D5F3D1191EC270004AB296 /* BRAppDelegate.m */,
 				75D5F3DF191EC270004AB296 /* Images.xcassets */,
@@ -577,9 +363,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75D5F3F6191EC270004AB296 /* Build configuration list for PBXNativeTarget "breadwallet" */;
 			buildPhases = (
+				8CC3F31A5F93F41726C4A1BE /* Check Pods Manifest.lock */,
 				75D5F3BA191EC270004AB296 /* Sources */,
 				75D5F3BB191EC270004AB296 /* Frameworks */,
 				75D5F3BC191EC270004AB296 /* Resources */,
+				9BA599940358F0E63E92994E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -686,12 +474,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8CC3F31A5F93F41726C4A1BE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9BA599940358F0E63E92994E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-breadwallet/Pods-breadwallet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		759F2C241AABE4620029A5AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				759F2C431AABE4B60029A5AB /* secp256k1.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,30 +519,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				752E28AA19234AE300DB5A3C /* BRAddressEntity.m in Sources */,
 				75AA5F55194143D5003F23BD /* BRBouncyBurgerButton.m in Sources */,
-				752E28AB19234AE300DB5A3C /* BRMerkleBlockEntity.m in Sources */,
-				752E28AC19234AE300DB5A3C /* BRPeerEntity.m in Sources */,
-				752E28AD19234AE300DB5A3C /* BRTransactionEntity.m in Sources */,
-				752E28AE19234AE300DB5A3C /* BRTxInputEntity.m in Sources */,
-				752E28AF19234AE300DB5A3C /* BRTxOutputEntity.m in Sources */,
 				758DBD0E1980634900389E2A /* BRTxDetailViewController.m in Sources */,
 				7548CF3719556FD700EF827F /* BRCopyLabel.m in Sources */,
-				75767C421A0EC6F9003E7DE9 /* UIImage+Blur.m in Sources */,
-				752E28D119234C3600DB5A3C /* BRKey.m in Sources */,
 				84F68C8A1975E9E2002FC300 /* BRScanViewController.m in Sources */,
-				752E28D219234C3600DB5A3C /* BRKey+BIP38.m in Sources */,
-				752E28D919234C3600DB5A3C /* BRTransaction.m in Sources */,
-				752E28CE19234C3600DB5A3C /* BRBIP32Sequence.m in Sources */,
-				752E28CF19234C3600DB5A3C /* BRBIP39Mnemonic.m in Sources */,
-				752E28DA19234C3600DB5A3C /* BRWallet.m in Sources */,
-				752E28DB19234C3600DB5A3C /* BRWalletManager.m in Sources */,
-				752E28D319234C3600DB5A3C /* BRMerkleBlock.m in Sources */,
-				752E28D019234C3600DB5A3C /* BRBloomFilter.m in Sources */,
-				752E28D619234C3600DB5A3C /* BRPeer.m in Sources */,
-				752E28D819234C3600DB5A3C /* BRPeerManager.m in Sources */,
-				752E28D419234C3600DB5A3C /* BRPaymentProtocol.m in Sources */,
-				752E28D519234C3600DB5A3C /* BRPaymentRequest.m in Sources */,
 				7525B619192453840041C0F2 /* BRNavigationBar.m in Sources */,
 				75878BC1192AEC3F002505AB /* BRReceiveViewController.m in Sources */,
 				75878BBF192ACD46002505AB /* BRAmountViewController.m in Sources */,
@@ -731,16 +531,11 @@
 				757BE7E3192C0E9D0061CB20 /* BRRestoreViewController.m in Sources */,
 				757BE7E6192C1FF70061CB20 /* BRWelcomeViewController.m in Sources */,
 				757BE7E9192D4E880061CB20 /* BRSeedViewController.m in Sources */,
-				752E28E719234DA200DB5A3C /* NSData+Bitcoin.m in Sources */,
-				752E28E919234DA200DB5A3C /* NSManagedObject+Sugar.m in Sources */,
-				752E28EA19234DA200DB5A3C /* NSMutableData+Bitcoin.m in Sources */,
-				752E28EB19234DA200DB5A3C /* NSString+Bitcoin.m in Sources */,
 				757C89521A2FCE420076B373 /* BRSettingsViewController.m in Sources */,
 				75D5F3D2191EC270004AB296 /* BRAppDelegate.m in Sources */,
 				759FBB36193290F600AB4465 /* BRRootViewController.m in Sources */,
 				752E289A192349CE00DB5A3C /* BreadWallet.xcdatamodeld in Sources */,
 				759FBB37193290F600AB4465 /* BRSendViewController.m in Sources */,
-				752E28F119234E8100DB5A3C /* Reachability.m in Sources */,
 				75D5F3CE191EC270004AB296 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -876,6 +671,7 @@
 		};
 		754F4BC9194BBA94004AD9CA /* GCov_Build */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DF5D897C69BE6C0D7FBE0E9 /* Pods-breadwallet.gcov_build.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -888,6 +684,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/secp256k1",
 					"$(SRCROOT)",
+					/usr/local/include,
 				);
 				INFOPLIST_FILE = "BreadWallet/BreadWallet-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1059,6 +856,7 @@
 		};
 		75D5F3F7191EC270004AB296 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D608EA859955BCF34887BC57 /* Pods-breadwallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1071,6 +869,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/secp256k1",
 					"$(SRCROOT)",
+					/usr/local/include,
 				);
 				INFOPLIST_FILE = "BreadWallet/BreadWallet-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1080,6 +879,7 @@
 		};
 		75D5F3F8191EC270004AB296 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A91CFFF87B15726C189B9B5B /* Pods-breadwallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1092,6 +892,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/secp256k1",
 					"$(SRCROOT)",
+					/usr/local/include,
 				);
 				INFOPLIST_FILE = "BreadWallet/BreadWallet-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";

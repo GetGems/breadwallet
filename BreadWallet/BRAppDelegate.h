@@ -24,13 +24,12 @@
 //  THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
+#import <BRCoreAppDelegate.h>
 
 #define BRURLNotification            @"BRURLNotification"
 #define BRFileNotification           @"BRFileNotification"
 #define SETTINGS_RECEIVED_AMOUNT_KEY @"SETTINGS_RECEIVED_AMOUNT"
 
-@interface BRAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface BRAppDelegate : BRCoreAppDelegate
 
 @end

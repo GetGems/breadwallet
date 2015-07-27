@@ -1,0 +1,1 @@
+../../../../BreadWalletCore/BreadWalletCore/BRWallet.h

@@ -26,6 +26,7 @@
 #import "BRAppDelegate.h"
 #import "BRPeerManager.h"
 #import "BRWalletManager.h"
+#import "MagicalRecord+BreadWallet.h"
 
 #if BITCOIN_TESTNET
 #warning testnet build
@@ -37,6 +38,9 @@
 {
     // Override point for customization after application launch.
 
+    // init MR
+    [MagicalRecord BR_initializeFromBundle:[NSBundle mainBundle]];
+    
     // use background fetch to stay synced with the blockchain
     [[UIApplication sharedApplication] setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
 
