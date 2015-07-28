@@ -39,17 +39,13 @@
 
 - (instancetype)setAttributesFromTx:(BRTransaction *)tx inputIndex:(NSUInteger)index
 {
-    [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
-        self.txHash = tx.inputHashes[index];
-        self.n = [tx.inputIndexes[index] intValue];
-        self.signature = (tx.inputSignatures[index] != [NSNull null]) ? tx.inputSignatures[index] : nil;
-        self.sequence = [tx.inputSequences[index] intValue];
-        
-        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"txHash == %@ && n == %d", self.txHash, self.n];
-        [[BRTxOutputEntity MR_findAllWithPredicate:predicate].lastObject setSpeed:YES];
-    } completion:^(BOOL contextDidSave, NSError *error) {
-        
-    }];
+    self.txHash = tx.inputHashes[index];
+    self.n = [tx.inputIndexes[index] intValue];
+    self.signature = (tx.inputSignatures[index] != [NSNull null]) ? tx.inputSignatures[index] : nil;
+    self.sequence = [tx.inputSequences[index] intValue];
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"txHash == %@ && n == %d", self.txHash, self.n];
+    [[BRTxOutputEntity MR_findAllWithPredicate:predicate].lastObject setSpent:YES];
 
     return self;
 }

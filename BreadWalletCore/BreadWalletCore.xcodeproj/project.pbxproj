@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4AD514BDF3312FBA4632BFF5 /* libPods-BreadWalletCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B90A5FBA0DAD9BAB5C3660 /* libPods-BreadWalletCore.a */; };
+		E18240781B677AA00050A923 /* BreadWallet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E18240751B677AA00050A923 /* BreadWallet.xcdatamodeld */; };
 		E1944E1E1B66810800823C1B /* libBreadWalletCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1944E121B66810700823C1B /* libBreadWalletCore.a */; };
 		E1944E3A1B6681F800823C1B /* BRAddressEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E1944E2F1B6681F800823C1B /* BRAddressEntity.m */; };
 		E1944E3B1B6681F800823C1B /* BRMerkleBlockEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E1944E311B6681F800823C1B /* BRMerkleBlockEntity.m */; };
@@ -33,7 +34,6 @@
 		E1944E761B66821A00823C1B /* NSMutableData+Bitcoin.m in Sources */ = {isa = PBXBuildFile; fileRef = E1944E6F1B66821A00823C1B /* NSMutableData+Bitcoin.m */; };
 		E1944E781B66821A00823C1B /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = E1944E731B66821A00823C1B /* UIImage+Blur.m */; };
 		E1944E7B1B66822300823C1B /* BRCoreAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1944E7A1B66822300823C1B /* BRCoreAppDelegate.m */; };
-		E1944E8A1B66824D00823C1B /* BreadWallet 2.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = E1944E871B66824D00823C1B /* BreadWallet 2.xcdatamodel */; };
 		E1944E8B1B66824D00823C1B /* BIP39EnglishWords.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1944E881B66824D00823C1B /* BIP39EnglishWords.plist */; };
 		E1944E8C1B66824D00823C1B /* FixedPeers.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1944E891B66824D00823C1B /* FixedPeers.plist */; };
 		E1944E911B66825D00823C1B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E1944E8F1B66825D00823C1B /* Reachability.m */; };
@@ -72,6 +72,8 @@
 		470CA8EE32F4588A7D612B27 /* Pods-BreadWalletCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreadWalletCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-BreadWalletCore/Pods-BreadWalletCore.release.xcconfig"; sourceTree = "<group>"; };
 		63524500F5C769DAC1AB991F /* Pods-BreadWalletCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreadWalletCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BreadWalletCore/Pods-BreadWalletCore.debug.xcconfig"; sourceTree = "<group>"; };
 		A1B90A5FBA0DAD9BAB5C3660 /* libPods-BreadWalletCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BreadWalletCore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E18240761B677AA00050A923 /* BreadWallet 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "BreadWallet 2.xcdatamodel"; sourceTree = "<group>"; };
+		E18240771B677AA00050A923 /* BreadWallet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BreadWallet.xcdatamodel; sourceTree = "<group>"; };
 		E1944E121B66810700823C1B /* libBreadWalletCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBreadWalletCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1944E1D1B66810800823C1B /* BreadWalletCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreadWalletCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1944E231B66810800823C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -127,7 +129,6 @@
 		E1944E7A1B66822300823C1B /* BRCoreAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRCoreAppDelegate.m; sourceTree = "<group>"; };
 		E1944E801B66823000823C1B /* BreadWalletCoreBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreadWalletCoreBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1944E831B66823000823C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1944E871B66824D00823C1B /* BreadWallet 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "BreadWallet 2.xcdatamodel"; sourceTree = "<group>"; };
 		E1944E881B66824D00823C1B /* BIP39EnglishWords.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BIP39EnglishWords.plist; sourceTree = "<group>"; };
 		E1944E891B66824D00823C1B /* FixedPeers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FixedPeers.plist; sourceTree = "<group>"; };
 		E1944E8E1B66825D00823C1B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
@@ -342,7 +343,7 @@
 		E1944E811B66823000823C1B /* BreadWalletCoreBundle */ = {
 			isa = PBXGroup;
 			children = (
-				E1944E871B66824D00823C1B /* BreadWallet 2.xcdatamodel */,
+				E18240751B677AA00050A923 /* BreadWallet.xcdatamodeld */,
 				E1944E881B66824D00823C1B /* BIP39EnglishWords.plist */,
 				E1944E891B66824D00823C1B /* FixedPeers.plist */,
 				E1944E821B66823000823C1B /* Supporting Files */,
@@ -608,7 +609,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1944E8A1B66824D00823C1B /* BreadWallet 2.xcdatamodel in Sources */,
+				E18240781B677AA00050A923 /* BreadWallet.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -868,6 +869,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E18240751B677AA00050A923 /* BreadWallet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E18240761B677AA00050A923 /* BreadWallet 2.xcdatamodel */,
+				E18240771B677AA00050A923 /* BreadWallet.xcdatamodel */,
+			);
+			currentVersion = E18240761B677AA00050A923 /* BreadWallet 2.xcdatamodel */;
+			path = BreadWallet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E1944E0A1B66810700823C1B /* Project object */;
 }

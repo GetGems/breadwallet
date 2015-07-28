@@ -167,14 +167,12 @@ masterPublicKey:(NSData *)masterPublicKey seed:(NSData *(^)(NSString *authprompt
                 return nil;
             }
 
-            [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
+            [MagicalRecord saveWithBlockAndWait:^(NSManagedObjectContext *localContext) {
                 BRAddressEntity *e = [BRAddressEntity MR_createEntityInContext:localContext];
                 
                 e.address = addr;
                 e.index = n;
                 e.internal = internal;
-            } completion:^(BOOL contextDidSave, NSError *error) {
-                
             }];
 
             [self.allAddresses addObject:addr];
@@ -461,7 +459,9 @@ masterPublicKey:(NSData *)masterPublicKey seed:(NSData *(^)(NSString *authprompt
 
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"txHash == %@", transaction.txHash];
     if ([BRTransactionEntity MR_findAllWithPredicate:predicate].count == 0) {
-        [[BRTransactionEntity MR_createEntity] setAttributesFromTx:transaction];
+        [MagicalRecord saveWithBlockAndWait:^(NSManagedObjectContext *localContext) {
+            [[BRTransactionEntity MR_createEntityInContext:localContext] setAttributesFromTx:transaction];
+        }];
     }
 
     return YES;
@@ -557,13 +557,11 @@ masterPublicKey:(NSData *)masterPublicKey seed:(NSData *(^)(NSString *authprompt
         [self updateBalance];
 
         NSPredicate *predicate = [NSPredicate predicateWithFormat:@"txHash in %@", txHashes];
-        [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
+        [MagicalRecord saveWithBlockAndWait:^(NSManagedObjectContext *localContext) {
             for (BRTransactionEntity *e in [BRTransactionEntity MR_findAllWithPredicate:predicate]) {
                 e.blockHeight = height;
                 e.timestamp = timestamp;
             }
-        } completion:^(BOOL contextDidSave, NSError *error) {
-            
         }];
     }
 }

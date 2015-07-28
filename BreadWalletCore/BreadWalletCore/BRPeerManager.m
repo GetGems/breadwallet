@@ -751,7 +751,7 @@ static const char *dns_seeds[] = {
     NSMutableSet *addrs = [NSMutableSet set];
 
     for (BRPeer *p in peers) [addrs addObject:@((int32_t)p.address)];
-    [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
+    [MagicalRecord saveWithBlockAndWait:^(NSManagedObjectContext *localContext) {
         NSPredicate *predicate = [NSPredicate predicateWithFormat:@"! (address in %@)", addrs];
         [BRPeerEntity MR_deleteAllMatchingPredicate:predicate];
         
@@ -771,8 +771,6 @@ static const char *dns_seeds[] = {
         
         for (BRPeer *p in peers) [[BRPeerEntity MR_createEntityInContext:localContext] setAttributesFromPeer:p]; // add new peers
         
-    } completion:^(BOOL contextDidSave, NSError *error) {
-        
     }];
 }
 
@@ -786,7 +784,7 @@ static const char *dns_seeds[] = {
         b = self.blocks[b.prevBlock];
     }
     
-    [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
+    [MagicalRecord saveWithBlockAndWait:^(NSManagedObjectContext *localContext) {
         NSPredicate *predicate = [NSPredicate predicateWithFormat:@"! (blockHash in %@)", blocks.allKeys];
         [BRMerkleBlockEntity MR_deleteAllMatchingPredicate:predicate];
         
@@ -800,8 +798,6 @@ static const char *dns_seeds[] = {
             [[BRMerkleBlockEntity MR_createEntityInContext:localContext] setAttributesFromBlock:b];
         }
 
-    } completion:^(BOOL contextDidSave, NSError *error) {
-        
     }];
 }
 

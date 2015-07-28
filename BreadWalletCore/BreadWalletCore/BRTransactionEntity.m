@@ -44,7 +44,7 @@
 
 - (instancetype)setAttributesFromTx:(BRTransaction *)tx
 {
-    [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
+    [MagicalRecord saveWithBlockAndWait:^(NSManagedObjectContext *localContext) {
         NSMutableOrderedSet *inputs = [[NSMutableOrderedSet alloc] initWithOrderedSet:self.inputs];//[self mutableOrderedSetValueForKey:@"inputs"];
         NSMutableOrderedSet *outputs = [[NSMutableOrderedSet alloc] initWithOrderedSet:self.outputs];//[self mutableOrderedSetValueForKey:@"outputs"];
         NSUInteger idx = 0;
@@ -54,7 +54,7 @@
         self.timestamp = tx.timestamp;
         
         while (inputs.count < tx.inputHashes.count) {
-            [inputs addObject:[BRTxInputEntity MR_createEntity]];
+            [inputs addObject:[BRTxInputEntity MR_createEntityInContext:localContext]];
         }
         
         while (inputs.count > tx.inputHashes.count) {
@@ -66,7 +66,7 @@
         }
         
         while (outputs.count < tx.outputAddresses.count) {
-            [outputs addObject:[BRTxInputEntity MR_createEntity]];
+            [outputs addObject:[BRTxOutputEntity MR_createEntityInContext:localContext]];
         }
         
         while (outputs.count > tx.outputAddresses.count) {
@@ -80,8 +80,6 @@
         }
         
         self.lockTime = tx.lockTime;
-    } completion:^(BOOL contextDidSave, NSError *error) {
-        
     }];
     
     return self;
